@@ -56,7 +56,7 @@ pipeline {
         }
         stage('SmokeTest') {
             when {
-                branch 'master
+                branch 'master'
             }
             steps {
                 def response = httpRequest (
